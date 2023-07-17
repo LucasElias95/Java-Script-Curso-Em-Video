@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio país de origem</title>
+</head>
+<body>
+    <h1>Nos diga em que país você nasceu</h1>
+    Em que país você nasceu? <input type="text" name="txtpo" id="txtpo">
+    <input type="button" value="Verificar" onclick="autenticar()">
+    <div id="resposta"></div>
+    <script>
+        function autenticar() {
+            var textp = document.getElementById('txtpo');
+            var resposta = document.getElementById('resposta');
+            var pais = textp.value;
+
+            if (pais === "") {
+                resposta.innerHTML = "<p>Por favor, digite o nome do país de origem.</p>";
+            } else if (pais === "Brasil") {
+                resposta.innerHTML = "<p>Você é <strong>Brasileiro</strong> e está no seu país de origem!</p>";
+            } else {
+                resposta.innerHTML = "<p>Você é <strong>estrangeiro</strong></p>";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+ordem de precedência dos operadores aritimeticos
+()
+**
+*/%
++-
+-------------------------------------
+() ** /
+> < >=
+!
+&& (e)
+|| (ou)

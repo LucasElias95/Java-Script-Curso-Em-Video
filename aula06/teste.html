@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: blueviolet;
+    font-family: Arial;
+    font-size: 20;
+    color: aliceblue;
+    
+}
+
+</style>
+    <script>
+        var name = prompt('Qual seu nome?')
+        var s = Number(prompt('Quanto você ganha por mês?'))
+        var BRL = s.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+        var usd = s/5
+        var USD = usd.toLocaleString('pt-br',{style: 'currency', currency: 'USD'})
+        document.write(`Olá, <strong>${name}</strong>. Você ganha ${BRL} por mês, se você recebece em dolar ganharia ${USD}`)
+    </script>
+    
+</body>
+</html>

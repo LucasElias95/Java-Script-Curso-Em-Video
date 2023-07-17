@@ -1,0 +1,14 @@
+! negação (ou é ou não é)
+True ou False
+
+&& conjunção (precisa que todas aas informações sejam verdadeiras ex login e senha)
+True e True = True
+True e False = False
+False e True = False
+Fals e False = False
+
+|| disjunção (precisa que apenas uma informação seja verdadeira)
+True e True = True
+True e False = True
+False e True = True
+False e False = False
